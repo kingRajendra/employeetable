@@ -23,14 +23,14 @@ app.get("/api/get", (req,res) => {
     });
 });
 
-/** app.get("/", (req,res)=> {
+app.get("/", (req,res)=> {
     const sqlInsert = "INSERT INTO employee (emp_name,department,city,salary) VALUES ('Goutham','Js', 'Hyd', 12000)";
     db.query(sqlInsert, (error,result) => {
         console.log("error", error);
         console.log("result", result);
         res.send("sql server")
     });
-}); **/
+}); 
 
 app.listen(1000, () => {
     console.log(`Heloo World!...  Server is Running on Port: 1000`);
