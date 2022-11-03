@@ -2,6 +2,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import React from 'react';
 import {useState, useRef} from 'react';
 import { Button,Modal} from 'react-bootstrap';
+
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
  
 function Employee() {
     
