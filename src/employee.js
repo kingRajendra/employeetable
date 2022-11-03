@@ -1,4 +1,3 @@
-
 import "bootstrap/dist/css/bootstrap.min.css";
 import React from 'react';
 import {useState, useRef} from 'react';
@@ -26,7 +25,7 @@ function Employee() {
           <div class="row ">
            <div class="col-sm-2 mt-5 mb-4 text-gred">
               <div className="search">
-                <form class="form-inline" onSubmit={handleSubmit}>
+                <form class="form-inline">
                  <input class="form-control mr-sm-2" type="search" placeholder="Search Employee" aria-label="Search"/>
                 </form>
               </div>    
@@ -40,7 +39,7 @@ function Employee() {
             </div>
             <div class="row">
                 <div class="table-responsive " >
-                    <form>
+                    <form onSubmit={handleSubmit}>
                  <table class="table table-striped table-hover table-bordered">
                     <thead>
                         <tr>
